@@ -11,3 +11,4 @@
 - git pull origin main (remote local branches)
 - git remote (to know about remote branches)
 - git branch (to know about local branch)
+- git branch -d <branchname> (to delete the branch)
