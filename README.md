@@ -7,3 +7,5 @@
 - git branch -M main
 - git remote add origin "repolink"
 - git remote -v (Source and Destination meand repolink)
+- git remote (to know about the remote branch)
+- git branch (to know about the local branch)
