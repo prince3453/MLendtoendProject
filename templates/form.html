@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Example</title>
+</head>
+<body>
+    <h1>Score Form</h1>
+    <form action="{{ url_for('form')}}" method="POST">
+        <input type="number" id="maths" name="maths" placeholder="maths" required>
+        <input type="number" id="chemistry" name="chemistry" placeholder="chemistry" required>
+        <input type="number" id="physics" name="physics" placeholder="physics" required>
+        <br><br>
+        <input type="submit" value="Submit">
+
+        <br><br>
+        The Average marks is {{ Score }}
+    </form>
+</body>
+</html>
