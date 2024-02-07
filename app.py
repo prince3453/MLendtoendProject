@@ -1,5 +1,5 @@
 from flask import Flask,render_template, request, redirect, url_for, jsonify
-
+from src.MLProject.logger import logging
 # entry point of the application
 app = Flask(__name__)
 
@@ -51,6 +51,7 @@ def api():
 
 # entry point denotes using the __
 if __name__ == '__main__':
+    logging.info("Flask Application has been started successfully!")
     app.run(debug=True) # debug=True allows for hot reloading if we change the thing
 
     #Flask app url routing
