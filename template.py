@@ -1,5 +1,5 @@
 import os
-from pathlib import path
+from pathlib import Path
 import logging
 
 logging.basicConfig(level=logging.INFO)
@@ -28,8 +28,8 @@ list_of_files = [
 
 
 for filepath in list_of_files:
-    filepath = path(filepath)
-    filedir, filename = os.file.split(filepath)
+    filepath = Path(filepath)
+    filedir, filename = os.path.split(filepath)
 
     if filedir != "":
         os.makedirs(filedir, exist_ok=True)
